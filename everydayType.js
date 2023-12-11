@@ -1,4 +1,4 @@
-/* 
+/*
 Primitives: string, number, boolean
     string: represents string values
     number: represents numbers
@@ -11,7 +11,7 @@ Arrays
 Any
     TS has a special type `any` that can be used when you dont want to use a particular value
 */
-let obj: any = { x: 0 };
+var obj = { x: 0 };
 // None of the following lines of code will throw compiler errors.
 // Using `any` disables all further type checking, and it is assumed
 // you know the environment better than TypeScript.
@@ -19,12 +19,4 @@ obj.foo();
 obj();
 obj.bar = 100;
 obj = "hello";
-const n: number = obj;
-
-/*
-Type Annotations on Variables
-    When declaring a varaible can optionally add a type annotation to explicityl specify the type of the variable
-    Typed annotations go after the name
-    Most cases aren't needed
- */
-let myName: string = "Alice";
+var n = obj;
