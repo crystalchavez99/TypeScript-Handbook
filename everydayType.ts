@@ -77,3 +77,16 @@ names.forEach((s) => {
 names.forEach((s) => {
     console.log(s.toUpperCase());
   });
+
+/*
+Object Types
+  Common type is the object type, refers to any js value with props
+  Can use , or ; to seperate properties
+  type part is optional and will be assumed as any
+ */
+// The parameter's type annotation is an object type
+function printCoord(pt: { x: number; y: number }) {
+    console.log("The coordinate's x value is " + pt.x);
+    console.log("The coordinate's y value is " + pt.y);
+  }
+  printCoord({ x: 3, y: 7 });
